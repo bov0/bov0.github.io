@@ -1,0 +1,286 @@
+body {
+    background-color: rgb(205, 205, 205);
+    font-size: 20px;
+    font-family:'Lucida Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto 1fr auto auto;
+      grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "usuarios texto1 texto2"
+        "login login tabla"
+        "footer footer footer";
+      gap: 20px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      max-width: 1000px;
+      font-size: 18px;
+}
+
+header {
+    grid-area: header;
+    background-image: url(Cappadocia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px greenyellow;
+  }
+
+  nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 61);
+    height: 60%;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  #Examen {
+    margin-right: 40%;
+  }
+
+  nav p {
+    color: white;
+  }
+
+  nav p:hover {
+    color: yellow;
+    background-color: red;
+  }
+
+.usuarios {
+    grid-area: usuarios;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 95%;
+  }
+
+.tarjeta {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 3px;
+  }
+
+  .tarjeta img {
+    width: 100%;
+    height: 100%;
+  }
+
+.texto1 {
+    grid-area: texto1;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;    
+    height: 90%;
+
+  }
+
+.texto1 p {
+    text-align: justify;
+  }
+
+.texto1 img {
+    width: 60%;
+  }
+
+#TextoVerde {
+    color: green;
+    font-weight: bolder;
+  }
+
+#TextoAzul {
+    color: blue;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.texto2 {
+    grid-area: texto2;
+    background-color: #7e7d7d;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    height: 90%;
+  }
+
+.texto2 p {
+    text-align: justify;
+}
+
+.texto2 img {
+    width: 100%;
+    border-radius: 50%;
+    width: 50%;
+}
+
+#TextoRojo {
+    color: red;
+    font-weight: bolder;
+  }
+
+  .Login {
+    grid-area: login;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bolder;
+  }
+
+  .login-formulario {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .campos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span i {
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+  }
+
+
+  input[type="text"],
+  input[type="password"] {
+    width: 96%;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .login-boton {
+    background-color: #1e87c4;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+  }
+
+  .login-boton:hover {
+    background-color: green;
+  }
+
+.tabla {
+    grid-area: tabla;
+    background-color: rgb(255, 112, 59);
+    padding: 10%;
+    border-radius: 10px;
+    width: 93%;
+    height: 85%;
+    font-size: 16px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0, 0.9, 0.9, 0.9);
+    font-size: 12px;
+  }
+
+  tr {
+    background-color:rgb(190, 190, 190);
+  }
+
+  td,
+  th {
+    border: none;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  th {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  tr:hover {
+    background-color: #0077cc;
+    color: white;
+  }
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "nav"
+        "usuarios"
+        "texto1"
+        "texto2"
+        "login"
+        "tabla"
+        "footer";
+        gap: 20px;
+        max-width: 60%;
+        align-items: center;
+      justify-content: center;
+    }
+}
