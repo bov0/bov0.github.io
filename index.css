@@ -27,7 +27,7 @@ body {
 
 header {
     grid-area: header;
-    background-image: url(Cappadocia.jpg);
+    background-image: url(imagenes/Cappadocia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
